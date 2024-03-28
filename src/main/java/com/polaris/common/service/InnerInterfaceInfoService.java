@@ -10,7 +10,6 @@ import com.polaris.common.entity.InterfaceInfo;
 * @createDate 2024-03-03 23:12:07
 */
 public interface InnerInterfaceInfoService {
-    void validInterfaceInfo(InterfaceInfo interfaceInfo, boolean add);
     /*
      * 从数据库中查接口是否存在（通过请求url、请求方法）
      * @param null
@@ -18,7 +17,7 @@ public interface InnerInterfaceInfoService {
      * @author polaris
      * @create 2024/3/27
      **/
-    InterfaceInfo getInterface(String path,String method);
+    InterfaceInfo getInterfaceInfo(String url,String method);
 
 
 }
